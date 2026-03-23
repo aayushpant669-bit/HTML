@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <table border="10px">
+        <h2>Registration Form</h2>
+        <tr>
+            <td>Enter your first name:</td>
+            <td><input type="text" id="firstName" name="firstName"></td>
+        </tr>
+        <tr>
+            <td>Enter your last name:</td>
+            <td><input type="text" id="lastName" name="lastName"></td>
+        </tr>
+        <tr>
+            <td>Enter your password:</td>
+            <td><input type="password" id="password" name="password"></td>
+        </tr>
+        <tr>
+            <td>Re-enter your password:</td>
+            <td><input type="password" id="confirmPassword" name="confirmPassword"></td>
+        </tr>
+        <tr>
+            <td>Enter your email:</td>
+            <td><input type="email" id="email" name="email"></td>
+        </tr>
+        <tr>
+            <td>Enter your phone number:</td>
+            <td><input type="tel" id="phoneNumber" name="phoneNumber"></td>
+        </tr>
+        <tr>
+            <td>Enter your address:</td>
+            <td><input type="text" id="address" name="address"></td>
+        </tr>
+        <tr>
+            <td>Enter your gender:</td>
+            <td>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Select your hobbies: </td>
+            <td>
+                <input type="checkbox" id="reading" name="hobbies" value="reading">
+                <label for="reading">Reading</label>
+                <input type="checkbox" id="writing" name="hobbies" value="writing">
+                <label for="writing">Writing</label>
+                <input type="checkbox" id="coding" name="hobbies" value="coding">
+                <label for="coding">Coding</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Select your DOB:</td>
+            <td><input type="date" id="dob" name="dob"></td>
+        </tr>
+        <tr>
+            <td>Select your country:</td>
+            <td>
+                <select id="country" name="country">
+                    <option value="usa">USA</option>
+                    <option value="nepal">NEPAL</option>
+                    <option value="uk">UK</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Upload your photo:</td>
+            <td><input type="file" id="photo" name="photo"></td>
+
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Save my data">
+                <input type="reset" value="Reset Data">
+            </td>
+        </tr>
+    </table>
+
+   
+</body>
+</html>

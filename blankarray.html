@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="text1">
+
+<input type="button" value="Add" onclick="add_item()">
+
+<input type="button" value="Display" onclick="display_item()">
+
+<div id="result"></div>
+
+<script>
+
+var arr = [];
+var x = 0;
+
+function add_item()
+{
+arr[x] = document.getElementById("text1").value;
+
+alert(arr[x] + " Added");
+
+x++;
+
+document.getElementById("text1").value = "";
+}
+
+function display_item()
+{
+var data = "";
+
+for(var i=0; i<arr.length; i++)
+{
+data += arr[i] + "<br>";
+}
+
+document.getElementById("result").innerHTML = data;
+}
+
+</script>
+
+</body>
+</html>

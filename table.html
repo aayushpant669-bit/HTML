@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table { width: 60%; border-collapse: collapse; text-align: center; }
+        th { background-color: #3d8da0; color: white; padding: 10px; }
+        td { border: 1px solid #ddd; padding: 8px; }
+        .even-row { background-color: #e9eff1; }
+    </style>
+</head>
+<body>
+
+    <table id="myTable">
+        <tr>
+            <th>S.N.</th>
+            <th>Name</th>
+            <th>Image</th>
+        </tr>
+    </table>
+
+    <script>
+        const table = document.getElementById('myTable');
+        for (let i = 1; i <= 4; i++) {
+            let row = table.insertRow(-1);
+            
+        
+            if (i % 2 === 0) {
+                row.className = "even-row";
+            }
+
+            row.innerHTML = `<td>${i}</td><td>Name ${i}</td><td>${i}.jpg</td>`;
+        }
+    </script>
+
+</body>
+</html>

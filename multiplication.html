@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Table of 5</title>
+    <style>
+        body { font-family: monospace; font-size: 1.2rem; padding: 20px; line-height: 1.6; }
+        .table-container { background: #f9f9f9; padding: 15px; border-radius: 8px; width: 200px; }
+    </style>
+</head>
+<body>
+
+    <h2>Table of 5</h2>
+    <div id="display" class="table-container"></div>
+
+    <script>
+        const displayDiv = document.getElementById('display');
+        let n = 5;
+
+        for (let i = 1; i <= 10; i++) {
+            
+            let line = n + " * " + i + " = " + (n * i);
+            
+    
+            displayDiv.innerHTML += line + "<br>";
+        }
+    </script>
+
+</body>
+</html>

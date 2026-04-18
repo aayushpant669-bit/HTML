@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Layout</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Verdana;
+    background: #f5f5f5;
+}
+
+/*  TOP BAR  */
+.topbar {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+    height: 70px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu button {
+    margin-left: 10px;
+    padding: 5px 10px;
+}
+
+/* HEADER TEXT */
+.header-text {
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* SECTION TITLE */
+.section-title {
+    padding: 20px;
+    font-size: 22px;
+}
+
+/* CARDS GRID */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 20px 20px 20px;
+}
+
+.card {
+    background: #eaeaea;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+}
+
+/* FOOTER */
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 2px solid black;
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+
+.footer div {
+    padding: 15px;
+    border-right: 1px solid black;
+}
+
+.footer div:last-child {
+    border-right: none;
+}
+
+.map {
+    border: 2px solid black;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- TOP -->
+<div class="topbar">
+    <div class="navbar">
+        <div class="logo">Logo</div>
+
+        <div class="menu">
+            <button>Home</button>
+            <button>About Us</button>
+            <button>Services</button>
+            <button>Who We Work With</button>
+            <button>Contact</button>
+        </div>
+    </div>
+
+    <div class="header-text">
+        Calle de la Oficina 20, 28029, Madrid. Tel 91 756
+    </div>
+</div>
+
+<!-- TITLE -->
+<div class="section-title">Who We Work With</div>
+
+<!-- CARDS -->
+<div class="cards">
+
+    <!-- CARD -->
+    <div class="card">
+        <img src="" alt="Logo">
+        <div>
+            <h3>Coca Cola</h3>
+            <p>Steve Jobs - CEO</p>
+            <hr>
+            <p>Working with Rees. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="" alt="Logo">
+        <div>
+            <h3>Coca Cola</h3>
+            <p>Steve Jobs - CEO</p>
+            <hr>
+            <p>Working with Rees. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="" alt="Logo">
+        <div>
+            <h3>Coca Cola</h3>
+            <p>Steve Jobs - CEO</p>
+            <hr>
+            <p>Working with Rees. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="" alt="Logo">
+        <div>
+            <h3>Coca Cola</h3>
+            <p>Steve Jobs - CEO</p>
+            <hr>
+            <p>Working with Rees. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+
+    <!-- SITE MAP -->
+    <div>
+        <h4>Site Map</h4>
+        <p>Home<br>About Us<br>Services<br>Who We Work With<br>Contact</p>
+    </div>
+
+    <!-- TESTIMONIAL -->
+    <div>
+        <h4>Client Testimonials</h4>
+        <p>Duis mollis, est non commodo luctus...</p>
+        <p><b>Steve Jobs</b><br>CEO Window Foods</p>
+    </div>
+
+    <!-- MAP + CONTACT -->
+    <div>
+        <div class="map">Google Map</div>
+        <p>
+            Calle de la Oficina 20,<br>
+            28029, Madrid<br>
+            Tel 91 756<br>
+            Mobile +34<br>
+            info@
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>

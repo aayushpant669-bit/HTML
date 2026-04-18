@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <table>
+        <h2>HTML Form Test</h2>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" id="name" name="name"></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><input type="text" id="address" name="address"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" id="email" name="email"></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td><input type="radio" id="male" value="male">
+            <label for="male">Male</label></td>
+            <td><input type="radio" id="female" value="female">
+            <label for="female">Female</label></td>
+        </tr>
+        <tr>
+            <td>Hobbies:</td>
+            <td><input type="checkbox" id="sports" value="sports">
+            <label for="sports">Sports</label></td>
+            <td><input type="checkbox" id="movies" value="movies">
+            <label for="movies">Movies</label></td>
+            <td><input type="checkbox" id="Travelling" value="Travelling">
+            <label for="Travelling">Travelling</label></td>
+
+        </tr>
+        <tr>
+            <td>Country:</td>
+            <td>
+                <select id="country" name="country">
+                    <option value="Nepal">Nepal</option>
+                    <option value="India">India</option>
+                    <option value="China">China</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Message:</td>
+            <td><textarea id="message" name="message"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </td>
+
+        </tr>
+    </table>
+</body>
+</html>
